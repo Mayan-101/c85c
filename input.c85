@@ -1,0 +1,21 @@
+main{
+    // Three static variables assigned to A, B, C
+    counter = 0x00;
+    limit = 0xFF;
+    status = 0x05;
+    
+    // Compare counter (A) with limit (B)
+    if(counter < limit){
+        reg D = 0xAA;
+    }
+    
+    // Compare status (C) with limit (B)
+    if(status > limit){
+        reg E = 0xBB;
+    }
+    
+    // Can still use register names directly
+    if(A == B){
+        reg H = 0xCC;
+    }
+}
